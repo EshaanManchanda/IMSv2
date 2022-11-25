@@ -1,8 +1,11 @@
+import os
 from tkinter import *
 from tkinter import font
 from PIL import Image,ImageTk #pip install pillow
 from tkinter import ttk, messagebox # to import droup down list or chombo box
 import sqlite3
+
+from supplier import supplierClass
 
 
 class EmployeeClass: #we are make class here
@@ -288,7 +291,8 @@ class EmployeeClass: #we are make class here
                  messagebox.showerror("Error","No Record Found!",parent=self.root)   
         except Exception as ex:
             messagebox.showerror("Error",f"Error due to :{str(ex)}",parent=self.root)
-            
+#===============================================================
+    
             
 if __name__ == "__main__":
     root=Tk()#make root oject of tk class

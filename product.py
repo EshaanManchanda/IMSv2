@@ -166,7 +166,7 @@ class productClass: #we are make class here
                 if row!=None:
                     messagebox.showerror("Error","This Product already exist , try different one",parent=self.root)
                 else:
-                    cur.execute("Insert into product(Category , Supplier , Name , price , qty , status ) values(?,?,?,?,?,?)",(
+                    cur.execute("Insert into product(Category , Supplier , Name , price , qty , status,sales ) values(?,?,?,?,?,?,0)",(
                         self.var_cat.get(),
                         self.var_sup.get(),
                         self.var_name.get(),
