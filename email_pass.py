@@ -1,2 +1,2 @@
-email='techlovev@gmail.com'
-pass_="tgrfxnwhzfgoilom"
+email=gmail account
+pass_=pass
